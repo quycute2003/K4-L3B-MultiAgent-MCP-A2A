@@ -151,6 +151,14 @@ day09 run
 day09 validate
 ```
 
+Nếu mạng tới MCP bị ngắt giữa batch, tiếp tục từ các case đã hoàn tất bằng:
+
+```bash
+day09 run --resume
+```
+
+Runner chỉ giữ output có schema hợp lệ và có `case_finalized`; trace của case đang lỗi được bỏ trước khi retry.
+
 Kết quả được tạo tại:
 
 ```text
